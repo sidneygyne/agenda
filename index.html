@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="primeira palavra chave, segunda palavra chave, terceira">
+    <meta name="description" content="Calculadora de médias">
+
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="author" content="Sidney Rodrigues Magalhães">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+
+<body>
+    <div class="container">
+
+        <header>
+            <img src="./assets/contacts.png" alt="capelo diploma" />
+            <h1>Agenda de contatos</h1>
+        </header>
+
+        <main>
+
+            <form id="form-contacts">
+                <div class="form-container">
+                    <div class="input">
+                        <label>Nome</label>
+                        <input type="text" id="name" placeholder="Nome do contato" required="" />
+                    </div>
+                    <div class="input">
+                        <label>Telefone</label>
+                        <input type="tel" id="phone" placeholder="(dd)xxxxx-xxxx" maxlength="14" required=""
+                            data-js="phone" />
+                    </div>
+                    <div class="input">
+                        <label>E-mail</label>
+                        <input type="email" id="email" placeholder="seuemail@dominio.com" />
+                    </div>
+                    <button type="submit">+</button>
+                </div>
+            </form>
+
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- TABELA DE CONTATOS, DADOS DO CONTATO -->
+                </tbody>
+                <tfoot>
+                    <tr>
+
+                    </tr>
+                </tfoot>
+            </table>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+
+    <!-- Script Linkado do JavaScript -->
+    <script src="./script/validatePhone.js"></script>
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>
