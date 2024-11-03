@@ -49,6 +49,7 @@ form {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px
 }
 
@@ -101,8 +102,71 @@ table td {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-table td img {
-    height: 30px;
+
+@media (max-width: 960px) {
+    body {
+        background-color: rgb(35, 33, 33);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 40px;
+        color:white;
+    }
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 510px) {
+
+    header img {
+        height: 40px;
+        margin-right: 8px;
+        margin-bottom: 0px;
+    }
+    
+    header h1 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    
+label {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+form button {
+    font-size: 16px;
+    margin-top: 22px;
+}
+
+form input {
+    font-size: 12px;
+
+}
+
+form {
+    margin-bottom: 36px;
 }
 
 
+table th {
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+table td {
+    padding: 14px 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 10px;
+}
+  
+}
+@media (max-width: 400px) {
+ 
+}
